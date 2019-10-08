@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{65F8CC66-0F44-3FA7-8BDD-99F2CFBF9970}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SSDirector.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DiskData.cs" Line="39" Column="63" />
+      <File FileName="Assets/Scripts/DiskFactory.cs" Line="69" Column="50" />
+      <File FileName="Assets/Scripts/SSDirector.cs" Line="10" Column="42" />
+      <File FileName="Assets/Scripts/SceneController.cs" />
+      <File FileName="Assets/Scripts/Singleton.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="3DProject_3" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="SSDirector.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e36bc4c-197e-4081-b63b-3d41f20afe44" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
