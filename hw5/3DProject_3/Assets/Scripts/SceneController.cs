@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
-    DiskFactory diskFactory;
+    DiskController diskController;
     SSDirector ssDirector;
     Color[] colors = { Color.black, Color.blue, Color.cyan, Color.gray, Color.green, Color.magenta, Color.red, Color.white, Color.yellow };
     float count = 0;
@@ -24,8 +24,8 @@ public class SceneController : MonoBehaviour
 
     private void LoadResources()
     {
-        diskFactory = Singleton<DiskFactory>.instance;
-        diskFactory.initFactory();
+        diskController = Singleton<DiskController>.instance;
+        diskController.initFactory();
     }
 
     private void Update()
@@ -33,15 +33,15 @@ public class SceneController : MonoBehaviour
         count += Time.deltaTime;
         if(count >= 1f)
         {
-            if(diskFactory.isPrepared())
+            if(diskController.isPrepared())
             {
                 ruler = GetRuler();
-                diskFactory.getDisk(ruler);
+                diskController.getDisk(ruler);
             }
             count = 0;
         }
 
-        diskFactory.freeDisk();
+        diskController.freeDisk();
 
         if(Input.GetButtonDown("Fire1"))
         {
@@ -60,7 +60,7 @@ public class SceneController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        diskFactory.runDisk();
+        diskController.runDisk();
     }
 
     private Ruler GetRuler()
