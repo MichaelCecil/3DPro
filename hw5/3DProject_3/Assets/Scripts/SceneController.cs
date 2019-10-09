@@ -12,6 +12,7 @@ public class SceneController : MonoBehaviour
     Ruler ruler;
     public Text Score;
     private int score;
+    public float interval = 1f;
 
     private void Awake()
     {
@@ -25,13 +26,13 @@ public class SceneController : MonoBehaviour
     private void LoadResources()
     {
         diskController = Singleton<DiskController>.instance;
-        diskController.initFactory();
+        diskController.initController();
     }
 
     private void Update()
     {
         count += Time.deltaTime;
-        if(count >= 1f)
+        if(count >= interval)
         {
             if(diskController.isPrepared())
             {
@@ -51,9 +52,8 @@ public class SceneController : MonoBehaviour
             if(Physics.Raycast(ray, out hit))
             {
                 score += hit.transform.gameObject.GetComponent<DiskData>().ruler.score;
-                hit.transform.gameObject.GetComponent<DiskData>().gameObject.GetComponent<Transform>().position = new Vector3(0, -10, 0);
-                print("Score: " + score);
-                Score.text = "Score: " + score.ToString();
+                diskController.freeDisk(hit.transform.gameObject.GetComponent<DiskData>());
+                setTextContent();
             }
         }
     }
@@ -79,5 +79,11 @@ public class SceneController : MonoBehaviour
         direction = position - direction;
         float speed = Random.Range(1, 4);
         return new Ruler(size, color, position, direction, speed);
+    }
+
+    void setTextContent()
+    {
+        print("Score: " + score);
+        Score.text = "Score: " + score.ToString();
     }
 }

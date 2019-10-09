@@ -405,6 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: {fileID: 1586408361}
+  interval: 0.5
 --- !u!114 &974567047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disk: {fileID: 6212911409966400061, guid: 741319fedffa644c09730a1578236e1b, type: 3}
+  num: 20
 --- !u!1 &1533007823
 GameObject:
   m_ObjectHideFlags: 0
