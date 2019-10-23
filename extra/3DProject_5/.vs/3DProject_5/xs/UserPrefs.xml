@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{7DC9E438-91DD-3332-6143-585E53B28C4D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Particle_1.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Particle_2.cs" Line="19" Column="12" />
+      <File FileName="Assets/Scripts/Particle_1.cs" Line="115" Column="73" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="3DProject_5" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Particle_1.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="157f1e5e-9e06-4a6c-932f-5bef49ee0907" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
